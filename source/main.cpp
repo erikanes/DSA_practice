@@ -1,8 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <stack>
+#include <deque>
+#include <list>
 #include "MyVector.h"
 #include "MyLinkedList.h"
 #include "MyStack.h"
+#include "MyQueue.h"
+
 
 using namespace std;
 
@@ -181,13 +186,36 @@ void TestFunc(_Ty&& _val)
 }
 
 int main() {
-    MyVector<int> vec;
-    MyStack<int> st;
-    MyLinkedList<int> lst;
+    //MyVector<int> vec;
+    //MyStack<int> st;
+    //MyLinkedList<int> lst;
 
-    vec.emplace_back(10);
-    int a = 20;
-    vec.emplace_back(a);
+    //vec.emplace_back(10);
+    //int a = 20;
+    //vec.emplace_back(a);
+
+    //deque<int> dq;
+    //vector<int> v;
+    //stack<int> st;
+
+    //dq.push_back(1);
+    //dq.push_back(2);
+    //dq.push_back(3);
+    //dq.push_back(4);
+
+    //for (int i = 0; i < dq.size(); ++i)
+    //    cout << dq[i] << endl;
+    //
+
+    MyQueue<int> q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+
+    while (!q.empty()) {
+        cout << q.front() << ' ';
+        q.pop();
+    }
 
 	return 0;
 }

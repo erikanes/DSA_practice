@@ -35,5 +35,11 @@
     <ClInclude Include="source\MyVector.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="source\MyQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MyDeque.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

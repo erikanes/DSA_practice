@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GlobalDefine.h"
+#include <list>
 
 template<typename T>
 class MyLinkedList {

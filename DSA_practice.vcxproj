@@ -132,7 +132,9 @@
   <ItemGroup>
     <ClInclude Include="source\GlobalDefine.h" />
     <ClInclude Include="source\MyAlgorithm.h" />
+    <ClInclude Include="source\MyDeque.h" />
     <ClInclude Include="source\MyLinkedList.h" />
+    <ClInclude Include="source\MyQueue.h" />
     <ClInclude Include="source\MyStack.h" />
     <ClInclude Include="source\MyVector.h" />
   </ItemGroup>

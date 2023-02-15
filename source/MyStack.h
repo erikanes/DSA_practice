@@ -9,8 +9,8 @@
 - 이동 생성자 및 연산자 구현
 */
 
-#pragma region ver. List
-
+//#pragma region ver. List
+//
 //template <typename _Ty>
 //class MyStack {
 //public:
@@ -46,8 +46,8 @@
 //private:
 //	MyLinkedList<_Ty> list_;
 //};
-
-#pragma endregion
+//
+//#pragma endregion
 
 #pragma region ver. Vector
 
@@ -55,6 +55,7 @@ template <typename _Ty>
 class MyStack {
 public:
 	explicit MyStack() : vec_() {}
+	explicit MyStack(const int& _maxSize, const _Ty& _ty = _Ty()) : vec_(_maxSize, _ty) {}
 
 	~MyStack() {}
 
